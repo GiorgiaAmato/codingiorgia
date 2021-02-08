@@ -1,0 +1,589 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+
+.title-section1,
+.title-section2,
+.title-section3 {
+  display: flex;
+  justify-content: center;
+  color: #CEB8A6;
+  font-size: 25px;
+  text-align: center;
+}
+
+.title2,
+.title3 {
+  font-size: 23px;
+  color: #BC9E80;
+}
+
+/*-------------------------------------------------
+menu
+-------------------------------------------------*/
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#menu {
+  width: 100%;
+  text-align: center;
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  text-align: center;
+  display: none;
+}
+
+li a {
+  display: block;
+  padding: 12px 20px;
+  width: 150px;
+  color: black;
+  text-decoration: none;
+  text-shadow: 0 1px #000;
+  box-shadow: 1px 0 #444;
+}
+
+a:hover {
+  color: darkgrey;
+}
+
+.showMenu {
+  padding: 10px 10px;
+  color: white;
+  background: lightgrey;
+  text-align: center;
+  display: block;
+}
+
+/* nasconde il checkbox */
+input[type=checkbox] {
+  display: none;
+}
+
+/* mostra il menu quando il checkbox viene selezionato */
+input[type=checkbox]:checked~#menu {
+  display: block;
+}
+
+ul li {
+  display: block;
+}
+
+ul li,
+ul li a {
+  padding-right: 0;
+  padding-left: 0;
+  width: 100%;
+}
+
+#menu li a {
+  border: none;
+  box-shadow: none;
+}
+
+#menu li {
+  position: static;
+  background-color: lightgrey;
+}
+
+/*3 bars animated menu */
+.container-bars {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*-------------------------------------------------
+header
+-------------------------------------------------*/
+.header span {
+  color: black;
+  font-size: 45px;
+  text-align: center;
+  font-family: monospace;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/cover.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 450px;
+}
+
+/*-------------------------------------------------
+About-me
+-------------------------------------------------*/
+.about-me {
+  height: auto;
+  padding: 30px 30px;
+}
+
+.about-me h2 {
+  display: block;
+  width: auto;
+
+  padding-right: 112px;
+}
+
+.foto-profilo {
+  float: left;
+  height: 170px;
+  width: 170px;
+  border-radius: 100%;
+  margin-top: 40px;
+}
+
+.description {
+  padding: 30px;
+}
+
+.description i {
+  font-family: 'Rochester', "Poppins", sans-serif;
+  font-size: 30px;
+  color: #BC9E80;
+}
+/*------------------------------------------------
+servises
+-------------------------------------------------*/
+.ability {
+  height: auto;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: column nowrap;
+  -webkit-flex-flow: column nowrap;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  background-color: #EDE9E4;
+  padding: 30px;
+}
+
+.ability h3 {
+  padding: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.coding,
+.photo,
+.research {
+  padding: 10px;
+}
+
+.ability-card {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  text-align: center;
+  width: auto;
+}
+
+.icon-web-development,
+.icon-photographer,
+.icon-web-research {
+  width: 50px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/*-------------------------------------------------
+cards
+-------------------------------------------------*/
+.articles {
+  text-align: center;
+  padding: 30px;
+}
+
+.cards {
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: column nowrap;
+  -webkit-flex-flow: column nowrap;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  margin: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  width: 60%;
+}
+
+.excel,
+.security {
+  display: flex;
+  height: 100%;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h3 {
+  text-align: left;
+  padding: 5px;
+
+}
+
+h3 a {
+  text-decoration: none;
+  color: #b5c3cb;
+  font-size: 20px;
+}
+
+.fa-calendar {
+  display: flex;
+  flex-direction: row;
+  color: #b8d2d8;
+}
+
+.fa-calendar h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  color: #b8d2d8;
+}
+
+/*-------------------------------------------------
+footer
+-------------------------------------------------*/
+.footer {
+	background: #b5c3cb;
+	color: white;
+	height: auto;
+  width: 100%
+  ;
+}
+
+.footer-content {
+	height: auto;
+  display: flex;
+  flex-direction: column;
+
+  padding: 30px;
+}
+
+.footer-section {
+	flex: 1;
+}
+
+.footer-content h1,
+.footer-content h2 {
+  font-size: 20px;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo h1 {
+  font-family: 'Rochester', "Poppins", sans-serif;
+  color: black;
+  font-size: 50px;
+}
+
+
+.contact i {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+
+}
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.socials h2 {
+    padding-right: 32px;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.socials a {
+  padding-right: 18px;
+}
+
+.socials img {
+  height: 28px;
+  width: 28px;
+}
+
+.socials img:hover {
+  padding: 1.8px;
+}
+
+.contact i {
+  font-size: 20px;
+  color: white;
+  padding-top: 18px;
+}
+
+.mail {
+  padding-bottom: 20px;
+}
+
+.links ul a {
+	display: block;
+	font-size:20px;
+  color: black;
+  text-decoration: none;
+}
+
+.links ul a:hover {
+	color: white;
+	margin-left: 15px;
+	transition: all .3s;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form h2 {
+  padding-top: 15px;
+}
+.contact-input {
+	color: black;
+	margin-bottom: 10px;
+	line.height: 1.5rem;
+	padding: 8px 12px;
+	border: none;
+  border-radius: 5px;
+
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-input:focus {
+  outline: none;
+  border: 2px solid #8196a3;
+}
+
+.btn-send {
+  width: 100%;
+  height: 30px;
+
+  background-color: #e4eef5;
+  margin-bottom: 20px;
+  border:none;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-send:hover {
+    background-color: white;
+    color: #8196a3;
+    outline: none;
+}
+
+.footer .footer-bottom {
+	background: #e7e8ed;
+	color: #b7c5d5;
+	height: auto;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+  padding: 12px 0px;
+  font-size: 15px;
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+
+  /*-------------------------------------------------
+menu
+-------------------------------------------------*/
+  .showMenu {
+    display: none;
+  }
+
+  #menu {
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+
+    position: fixed;
+    opacity:0.4;
+  }
+
+  /*-------------------------------------------------
+header
+-------------------------------------------------*/
+  span {
+    position: relative;
+    bottom: 110px;
+  }
+
+  .header {
+    background-position: 0% 90%;
+    background-size: cover;
+    height: 500px;
+  }
+
+  /*-------------------------------------------------
+about me
+-------------------------------------------------*/
+  .about-me {
+    height: auto;
+  }
+
+  .foto-profilo {
+    margin-top: 8px;
+    height: 180px;
+    width: 180px;
+  }
+
+  .description {
+    padding: 30px 80px;
+    overflow: hidden;
+  }
+
+  /*-------------------------------------------------
+servises
+-------------------------------------------------*/
+  .ability {
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+  }
+
+  .ability-card {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    width: auto;
+  }
+
+  .icon-web-development,
+  .icon-photographer,
+  .icon-web-research {
+    width: 53px;
+    height: 53px;
+  }
+
+  .coding,
+  .photo,
+  .research {
+    padding-right: 30px;
+    padding-left: 30px
+  }
+/*-------------------------------------------------
+cards
+-------------------------------------------------*/
+  .cards {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row nowrap;
+    -webkit-flex-flow: row nowrap;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+
+    margin: 10px 200px;
+    max-width: 78%;
+  }
+
+  .excel,
+  .security {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+  }
+/*-------------------------------------------------
+footer
+-------------------------------------------------*/
+.footer-content {
+	height: auto;
+  width: auto;
+	display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  display: flex;
+  justify-content: left;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mail {
+  padding-bottom: 40px;
+}
+
+.contact-form h2,
+.links h2 {
+  padding-top: 80px;
+}
+
+.btn-send {
+  width: 30%;
+}
+
+}
