@@ -185,13 +185,12 @@ About-me
   padding: 30px 30px;
 }
 
-.about-me h2 {
-  display: block;
-  width: auto;
+.foto {
+ display: flex;
+ justify-content: center;
 }
 
 .foto-profilo {
-  float: left;
   height: 170px;
   width: 170px;
   border-radius: 100%;
@@ -199,7 +198,7 @@ About-me
 
 .description {
   font-size: 18px;
-  padding: 0px 30px 30px 60px;
+  margin: 30px;
 }
 
 .description span {
