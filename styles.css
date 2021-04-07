@@ -309,6 +309,8 @@ articles
   background-color: #eaf1e8;
   box-shadow: 0px 12px 39px -19px rgba(0, 0, 0, 0.75);
   overflow: hidden;
+
+  border: 1px solid rgb(0, 255, 106);
 }
 
 .carousel-wrapper .carousel {
@@ -316,6 +318,7 @@ articles
   transform: translateY(-50%);
   width: 100%;
   height: auto;
+  border: 1px solid blue;
 }
 
 .carousel-wrapper .carousel .carousel-cell {
@@ -326,6 +329,7 @@ articles
   min-width: 120px;
   margin: 0 30px;
   transition: transform 500ms ease;
+  border: 1px solid red;
 }
 
 .carousel-wrapper .carousel .carousel-cell.is-selected {
